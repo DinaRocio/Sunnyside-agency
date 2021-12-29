@@ -1,6 +1,6 @@
 {
   "name": "sunnyside-agency-app",
-  "homepage": "http://{dinarocio}.github.io/{Sunnyside-agency}",
+  "homepage": "http://{dinarocio}.github.io/Sunnyside-agency",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
