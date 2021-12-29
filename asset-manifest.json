@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/%7BSunnyside-agency%7D/static/css/main.e6c13ad2.css",
+    "main.js": "/%7BSunnyside-agency%7D/static/js/main.186ee182.js",
+    "static/media/image-header.jpg": "/%7BSunnyside-agency%7D/static/media/image-header.49b52ffa54752cb7c2d0.jpg",
+    "index.html": "/%7BSunnyside-agency%7D/index.html",
+    "main.e6c13ad2.css.map": "/%7BSunnyside-agency%7D/static/css/main.e6c13ad2.css.map",
+    "main.186ee182.js.map": "/%7BSunnyside-agency%7D/static/js/main.186ee182.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.186ee182.js"
+  ]
+}
