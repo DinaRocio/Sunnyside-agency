@@ -1,11 +1,13 @@
 import Header from "../../components/Header";
 import Services from "../../components/Services";
+import Testimonies from "../../components/Testimonies";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Services />
+      <Testimonies />
       <div>
         <div className="attribution">
           Challenge by{" "}

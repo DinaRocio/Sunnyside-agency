@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import { servicesData } from "../../data";
 import egg from "./../../assets/desktop/image-transform.jpg";
 import cup from "./../../assets/desktop/image-stand-out.jpg";
+import cherries from "./../../assets/desktop/image-graphic-design.jpg";
+import orange from "./../../assets/desktop/image-photography.jpg";
 import UnderlineText from "./TextStyle/underlinetext";
 
 interface ServiceImageProps {
@@ -14,11 +16,10 @@ const ProjectContainer = styled.section`
   width: 100%;
   height: 100%;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 600px 600px;
-
+  grid-template-rows: repeat(3, 600px);
   @media only screen and (max-width: 600px) {
     grid-template-columns: 100%;
-    grid-template-rows: 600px 600px 600px 600px;
+    grid-template-rows: repeat(6, 600px);
   }
 `;
 
@@ -29,7 +30,7 @@ const ServiceCard = styled.div`
   justify-content: center;
   color: var(--clr-dark-blue);
   width: 100%;
-  height: 100%;
+
   padding: 120px;
   gap: 50px;
   @media only screen and (max-width: 768px) {
@@ -57,6 +58,18 @@ const ServiceImage = styled.div<ServiceImageProps>`
   background-size: cover;
 `;
 
+const AbsoluteContainer = styled.div`
+  position: relative;
+`;
+
+const AbsoluteText = styled(ServiceCard)`
+  position: absolute;
+  padding: 130px 130px 0px 130px;
+  bottom: 50px;
+  text-align: center;
+  align-items: center;
+`;
+
 function Services() {
   return (
     <ProjectContainer>
@@ -67,12 +80,28 @@ function Services() {
       </ServiceCard>
       <ServiceImage image={egg} />
 
-      <ServiceCard>
+      <ServiceCard className="reverse">
         <h2>{servicesData[1].title}</h2>
         <p>{servicesData[1].summary}</p>
         <UnderlineText text="LEARN MORE" color={"hsl(7, 99%, 70%)"} />
       </ServiceCard>
-      <ServiceImage image={cup} />
+      <ServiceImage image={cup} className="reverse-image" />
+
+      <AbsoluteContainer>
+        <ServiceImage image={cherries} />
+        <AbsoluteText>
+          <h2>{servicesData[2].title}</h2>
+          <p>{servicesData[2].summary}</p>
+        </AbsoluteText>
+      </AbsoluteContainer>
+
+      <AbsoluteContainer>
+        <ServiceImage image={orange} />
+        <AbsoluteText>
+          <h2>{servicesData[3].title}</h2>
+          <p>{servicesData[3].summary}</p>
+        </AbsoluteText>
+      </AbsoluteContainer>
     </ProjectContainer>
   );
 }
