@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.js": "/Sunnyside-agency/static/js/main.ecf4ef85.js",
+    "main.js": "/Sunnyside-agency/static/js/main.03cbd8f7.js",
     "static/media/image-header.jpg": "/Sunnyside-agency/static/media/image-header.49b52ffa54752cb7c2d0.jpg",
+    "static/media/image-graphic-design.jpg": "/Sunnyside-agency/static/media/image-graphic-design.7ac8bdf0d3df29591a3b.jpg",
+    "static/media/image-photography.jpg": "/Sunnyside-agency/static/media/image-photography.104cf40b52f66520afb0.jpg",
     "static/media/logo.svg": "/Sunnyside-agency/static/media/logo.4271b8992622e4dd1cc7de08466dab06.svg",
     "index.html": "/Sunnyside-agency/index.html",
     "static/media/icon-arrow-down.svg": "/Sunnyside-agency/static/media/icon-arrow-down.979ef07a7cbb07d35f05bbaa093f7489.svg",
     "static/media/icon-hamburger.svg": "/Sunnyside-agency/static/media/icon-hamburger.7764b7eb6060edb45161f8b146f1373c.svg",
-    "main.ecf4ef85.js.map": "/Sunnyside-agency/static/js/main.ecf4ef85.js.map"
+    "main.03cbd8f7.js.map": "/Sunnyside-agency/static/js/main.03cbd8f7.js.map"
   },
   "entrypoints": [
-    "static/js/main.ecf4ef85.js"
+    "static/js/main.03cbd8f7.js"
   ]
 }
