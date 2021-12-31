@@ -12,7 +12,6 @@ interface ServiceImageProps {
 
 const ProjectContainer = styled.section`
   display: grid;
-  border: 1px solid red;
   width: 100%;
   height: 100%;
   grid-template-columns: 50% 50%;

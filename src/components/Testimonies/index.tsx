@@ -18,6 +18,7 @@ const TestimoniesSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 130px;
   padding: 190px 170px;
   @media only screen and (max-width: 600px) {
