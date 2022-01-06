@@ -1,35 +1,56 @@
-import styled from "@emotion/styled";
-import React from "react";
 import logo from "./../../assets/logo.svg";
-
-const FooterContainer = styled.footer`
-  background-color: var(--clr-dark-moderate-cyan);
-`;
+import facebook from "./../../assets/icon-facebook.svg";
+import twitter from "./../../assets/icon-twitter.svg";
+import instagram from "./../../assets/icon-instagram.svg";
+import pinterest from "./../../assets/icon-pinterest.svg";
+import {
+  FooterContainer,
+  LinksList,
+  LogoList,
+  SocialMediaLogo,
+} from "./styles";
 
 export default function Footer() {
   return (
     <FooterContainer>
-      <img src={logo} alt="logo" />
-      <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-      </ul>
+      <img src={logo} alt="logo" className="footer-logo" />
+      <LinksList>
+        <li>
+          <a href="https://github.com/DinaRocio">About</a>
+        </li>
+        <li>
+          <a href="https://github.com/DinaRocio">Services</a>
+        </li>
+        <li>
+          <a href="https://github.com/DinaRocio">Projects</a>
+        </li>
+      </LinksList>
 
-      <ul>
+      <LogoList>
         <li>
-          {" "}
-          <img src={logo} alt="logo" />
+          <SocialMediaLogo href="https://www.facebook.com/">
+            <img src={facebook} alt="facebook" />
+          </SocialMediaLogo>
         </li>
         <li>
-          {" "}
-          <img src={logo} alt="logo" />
+          <SocialMediaLogo href="https://www.instagram.com">
+            {" "}
+            <img src={instagram} alt="instagram" />{" "}
+          </SocialMediaLogo>
         </li>
         <li>
-          {" "}
-          <img src={logo} alt="logo" />
+          <SocialMediaLogo href="https://www.twitter.com">
+            {" "}
+            <img src={twitter} alt="twitter" />{" "}
+          </SocialMediaLogo>
         </li>
-      </ul>
+        <li>
+          <SocialMediaLogo href="https://www.pinterest.com">
+            {" "}
+            <img src={pinterest} alt="pinterest" />{" "}
+          </SocialMediaLogo>
+        </li>
+      </LogoList>
     </FooterContainer>
   );
 }

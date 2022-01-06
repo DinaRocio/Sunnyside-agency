@@ -20,6 +20,8 @@ export const globalStyles = css`
     --clr-dark-desaturated-cyan: hsl(167, 40%, 24%);
     --clr-dark-blue: hsl(198, 62%, 26%);
     --clr-dark-moderate-cyan: hsl(168, 34%, 41%);
+    --clr-light-green: hsl(167, 44%, 70%);
+    --clr-dark-green: hsl(166, 44%, 32%);
 
     /* Neutral */
     --clr-very-dark-desaturated-blue: hsl(212, 27%, 19%);
