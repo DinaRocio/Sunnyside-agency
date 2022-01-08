@@ -27,6 +27,7 @@ export const globalStyles = css`
     --clr-very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --clr-very-dark-grayish-blue: hsl(213, 9%, 39%);
     --clr-dark-grayish-blue: hsl(232, 10%, 55%);
+    --clr-faded-white: hsla(0, 0%, 100%, 0.2);
     --clr-grayish-blue: hsl(210, 4%, 67%);
     --clr-white: hsl(0, 0%, 100%);
 

@@ -19,7 +19,6 @@ export const NAV = styled.nav`
   ul li a {
     text-decoration: none;
     color: var(--clr-white);
-
     border-radius: 20px;
     padding: 10px 25px;
     background-color: transparent;
@@ -28,8 +27,8 @@ export const NAV = styled.nav`
   ul li:hover a {
     border-radius: 20px;
     padding: 10px 25px;
-    background-color: var(--clr-white);
-    color: var(--clr-dark-blue);
+    background-color: var(--clr-faded-white);
+    color: var(--clr-white);
   }
 
   ul li:last-child a {
