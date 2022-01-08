@@ -16,9 +16,47 @@ const ProjectContainer = styled.section`
   height: 100%;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, 600px);
+
+  .firstText {
+    order: 1;
+  }
+  .eggPic {
+    order: 2;
+  }
+  .secondText {
+    order: 4;
+  }
+  .cupPic {
+    order: 3;
+  }
+  .cherries {
+    order: 5;
+  }
+  .orange {
+    order: 6;
+  }
+
   @media only screen and (max-width: 600px) {
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 600px);
+    .firstText {
+      order: 1;
+    }
+    .eggPic {
+      order: 2;
+    }
+    .secondText {
+      order: 3;
+    }
+    .cupPic {
+      order: 4;
+    }
+    .cherries {
+      order: 5;
+    }
+    .orange {
+      order: 6;
+    }
   }
 `;
 
@@ -72,29 +110,33 @@ const AbsoluteText = styled(ServiceCard)`
 function Services() {
   return (
     <ProjectContainer id="services">
-      <ServiceCard>
+      {/* 1 */}
+      <ServiceCard className="firstText">
         <h2>{servicesData[0].title}</h2>
         <p>{servicesData[0].summary}</p>
         <UnderlineText text="LEARN MORE" color={"hsl(51, 100%, 49%)"} />
       </ServiceCard>
-      <ServiceImage image={egg} />
+      {/* 2 */}
+      <ServiceImage image={egg} className="eggPic" />
 
-      <ServiceCard>
+      {/* 3 */}
+      <ServiceCard className="secondText">
         <h2>{servicesData[1].title}</h2>
         <p>{servicesData[1].summary}</p>
         <UnderlineText text="LEARN MORE" color={"hsl(7, 99%, 70%)"} />
       </ServiceCard>
-      <ServiceImage image={cup} className="reverse-image" />
-
-      <AbsoluteContainer>
+      {/* 4 */}
+      <ServiceImage image={cup} className="cupPic" />
+      {/* 5 */}
+      <AbsoluteContainer className="cherries">
         <ServiceImage image={cherries} />
         <AbsoluteText>
           <h2>{servicesData[2].title}</h2>
           <p>{servicesData[2].summary}</p>
         </AbsoluteText>
       </AbsoluteContainer>
-
-      <AbsoluteContainer>
+      {/* 6 */}
+      <AbsoluteContainer className="orange">
         <ServiceImage image={orange} />
         <AbsoluteText>
           <h2>{servicesData[3].title}</h2>
