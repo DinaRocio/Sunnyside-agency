@@ -9,10 +9,6 @@ interface ProfileImgProps {
   image: string;
 }
 
-interface TestimonyProps {
-  image: string;
-}
-
 const TestimoniesSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -77,7 +73,7 @@ const Names = styled.div`
 
 function Testimonies() {
   return (
-    <TestimoniesSection>
+    <TestimoniesSection id="projects">
       <h2>CLIENT TESTIMONIALS</h2>
       <TestimoniesBody>
         <ProfileCard>

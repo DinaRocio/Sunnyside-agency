@@ -5,7 +5,7 @@ import ArrowDown from "./../../assets/icon-arrow-down.svg";
 
 export default function Header() {
   return (
-    <div>
+    <div id="about">
       <Navbar />
       <HeroImage image={heroImage} />
       <HeroContent>

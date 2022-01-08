@@ -71,7 +71,7 @@ const AbsoluteText = styled(ServiceCard)`
 
 function Services() {
   return (
-    <ProjectContainer>
+    <ProjectContainer id="services">
       <ServiceCard>
         <h2>{servicesData[0].title}</h2>
         <p>{servicesData[0].summary}</p>
@@ -79,7 +79,7 @@ function Services() {
       </ServiceCard>
       <ServiceImage image={egg} />
 
-      <ServiceCard className="reverse">
+      <ServiceCard>
         <h2>{servicesData[1].title}</h2>
         <p>{servicesData[1].summary}</p>
         <UnderlineText text="LEARN MORE" color={"hsl(7, 99%, 70%)"} />

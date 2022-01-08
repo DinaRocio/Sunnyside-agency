@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id="contact">
       <img src={logo} alt="logo" className="footer-logo" />
       <LinksList>
         <li>
