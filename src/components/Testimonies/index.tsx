@@ -16,7 +16,7 @@ const TestimoniesSection = styled.section`
   align-items: center;
   text-align: center;
   gap: 130px;
-  padding: 190px 170px;
+  padding: 170px 190px;
   @media only screen and (max-width: 600px) {
     gap: 60px;
     padding: 60px;

@@ -7,7 +7,7 @@ interface HeroImageProps {
 export const HeroImage = styled.div<HeroImageProps>`
   position: relative;
   background-image: url(${(props) => props.image});
-  height: 100vh;
+  height: 796px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
