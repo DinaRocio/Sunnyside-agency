@@ -1,0 +1,57 @@
+{
+    "header": {
+        "title": "SOMOS CRIATIVOS"
+    },
+    "footer": {
+        "about": "Sobre",
+        "services": "Serviços",
+        "projects": "Projectos",
+        "contact": "Contato"
+    },
+    "servicesData": {
+        "first": {
+            "title": "Transforme a sua marca",
+            "summary": "Somos uma agência criativa de serviço completo especializada em ajudar as marcas a crescer rapidamente. Envolva seus clientes por meio de imagens atraentes que fazem a maior parte do marketing para você"
+        },
+        "second": {
+            "title": "Destaque para o público certo",
+            "summary": "Utilizando uma fórmula de colaboração de designers, investigadores, fotógrafos, videógrafos e redactores, construiremos e alargaremos a sua marca em locais digitais."
+        },
+        "third": {
+            "title": "Desenho gráfico",
+            "summary": "Um ótimo design torna você memorável. Entregamos obras de arte que ressaltam a mensagem da sua marca e chamam a atenção de clientes em potencial."
+        },
+        "fourth": {
+            "title": "Fotografia",
+            "summary": "Aumente sua credibilidade obtendo as fotos mais impressionantes e de alta qualidade que melhoram a imagem da sua empresa."
+        }
+    },
+    "projectsData": {
+        "first": {
+            "title": "Desenho gráfico",
+            "summary": "Um ótimo design torna você memorável. Entregamos obras de arte que ressaltam a mensagem da sua marca e chamam a atenção de clientes em potencial."
+        },
+        "second": {
+            "title": "Fotografia",
+            "summary": "Aumente sua credibilidade obtendo as fotos mais impressionantes e de alta qualidade que melhoram a imagem da sua empresa."
+        }
+    },
+    "clientTestimonials": {
+        "title": "DEPOIMENTOS DE CLIENTES",
+        "first": {
+            "position": "Diretor de Marketing",
+            "testimony": "Depositamos nossa confiança na Sunnyside e eles entregaram, garantindo que nossas necessidades fossem atendidas e os prazos fossem sempre cumpridos."
+        },
+        "second": {
+            "position": "Diretor de Operações",
+            "testimony": "O entusiasmo de Sunnyside, juntamente com seu grande interesse no sucesso de nossa marca, proporcionaram uma experiência agradável e satisfatória."
+        },
+        "third": {
+            "position": "Empresária",
+            "testimony": "Resultado final incrível! Nossas vendas aumentaram mais de 400% quando trabalhamos com a Sunnyside. Muito recomendável!"
+        }
+    },
+    "utils": {
+        "learn_more": "Leia mais"
+    }
+}
