@@ -1,0 +1,57 @@
+{
+    "header": {
+        "title": "WE ARE CREATIVE"
+    },
+    "footer": {
+        "about": "About",
+        "services": "Services",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "servicesData": {
+        "first": {
+            "title": "Transform your brand",
+            "summary": "We are a full-service creative agency that specializes in helping brands grow fast. Engage your customers through compelling images that do most of the marketing for you"
+        },
+        "second": {
+            "title": "Stand out to the right audience",
+            "summary": "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we will build and extend your brand across digital venues."
+        },
+        "third": {
+            "title": "Graphic design",
+            "summary": "A great design makes you memorable. We deliver artwork that underscores your brand message and grabs the attention of potential customers."
+        },
+        "fourth": {
+            "title": "Photography",
+            "summary": "Increase your credibility by getting the most impressive, high-quality photos that enhance your company's image."
+        }
+    },
+    "projectsData": {
+        "first": {
+            "title": "Graphic design",
+            "summary": "A great design makes you memorable. We deliver artwork that underscores your brand message and grabs the attention of potential customers."
+        },
+        "second": {
+            "title": "Photography",
+            "summary": "Increase your credibility by getting the most impressive, high-quality photos that enhance your company's image."
+        }
+    },
+    "clientTestimonials": {
+        "title": "CLIENT TESTIMONIALS",
+        "first": {
+            "position": "Marketing director",
+            "testimony": "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always met."
+        },
+        "second": {
+            "position": "Chief Operating Officer",
+            "testimony": "Sunnyside's enthusiasm, coupled with their keen interest in the success of our brand, made for an enjoyable and satisfying experience."
+        },
+        "third": {
+            "position": "Business owner",
+            "testimony": "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+        }
+    },
+    "utils": {
+        "learn_more": "Read more"
+    }
+}
