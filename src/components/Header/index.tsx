@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { H1, HeroContent, HeroImage } from "../../pages/Home/home.styles";
 import { Navbar } from "../Navbar";
 import heroImage from "./../../assets/desktop/image-header.jpg";
@@ -9,7 +10,7 @@ export default function Header() {
       <Navbar />
       <HeroImage image={heroImage} />
       <HeroContent>
-        <H1>WE ARE CREATIVES</H1>
+        <H1>{t("header.title")}</H1>
         <img src={ArrowDown} alt="logo" />
       </HeroContent>
     </div>
