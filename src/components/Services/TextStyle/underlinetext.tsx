@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 interface Props {

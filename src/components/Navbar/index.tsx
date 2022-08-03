@@ -11,7 +11,6 @@ import {
   Triangle,
 } from "./styles";
 import { useState } from "react";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
