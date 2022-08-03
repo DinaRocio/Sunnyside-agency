@@ -1,11 +1,9 @@
 import styled from "@emotion/styled";
-import { servicesData } from "../../data";
 import egg from "./../../assets/desktop/image-transform.jpg";
 import cup from "./../../assets/desktop/image-stand-out.jpg";
 import cherries from "./../../assets/desktop/image-graphic-design.jpg";
 import orange from "./../../assets/desktop/image-photography.jpg";
 import UnderlineText from "./TextStyle/underlinetext";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 interface ServiceImageProps {
@@ -133,17 +131,6 @@ function Services() {
       id: 27624,
       title: t("fourth.title"),
       summary: t("fourth.summary"),
-    },
-  ];
-
-  const projectsData = [
-    {
-      title: t("projectsData.first.title"),
-      summary: t("projectsData.first.summary"),
-    },
-    {
-      title: t("projectsData.second.title"),
-      summary: t("projectsData.second.summary"),
     },
   ];
 

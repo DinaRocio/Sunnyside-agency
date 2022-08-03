@@ -1,10 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { clientTestimonials } from "../../data";
 import emily from "./../../assets/image-emily.jpg";
 import thomas from "./../../assets/image-thomas.jpg";
 import jennie from "./../../assets/image-jennie.jpg";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 interface ProfileImgProps {
