@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 interface Props {
-  text: string;
+  text?: string;
   color: string;
 }
 
@@ -30,9 +32,12 @@ const Underline = styled.span<UnderlineProps>`
 `;
 
 export default function UnderlineText({ text, color }: Props) {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "utils",
+  });
   return (
     <Container>
-      <p>{text}</p>
+      <p>{text ?? t("learn_more")}</p>
       <Underline color={color} />
     </Container>
   );

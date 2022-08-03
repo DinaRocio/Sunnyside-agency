@@ -5,6 +5,8 @@ import cup from "./../../assets/desktop/image-stand-out.jpg";
 import cherries from "./../../assets/desktop/image-graphic-design.jpg";
 import orange from "./../../assets/desktop/image-photography.jpg";
 import UnderlineText from "./TextStyle/underlinetext";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 interface ServiceImageProps {
   image: string;
@@ -108,13 +110,50 @@ const AbsoluteText = styled(ServiceCard)`
 `;
 
 function Services() {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "servicesData",
+  });
+  const servicesData = [
+    {
+      id: 143242,
+      title: t("first.title"),
+      summary: t("first.summary"),
+    },
+    {
+      id: 24324,
+      title: t("second.title"),
+      summary: t("second.summary"),
+    },
+    {
+      id: 22324,
+      title: t("third.title"),
+      summary: t("third.summary"),
+    },
+    {
+      id: 27624,
+      title: t("fourth.title"),
+      summary: t("fourth.summary"),
+    },
+  ];
+
+  const projectsData = [
+    {
+      title: t("projectsData.first.title"),
+      summary: t("projectsData.first.summary"),
+    },
+    {
+      title: t("projectsData.second.title"),
+      summary: t("projectsData.second.summary"),
+    },
+  ];
+
   return (
     <ProjectContainer id="services">
       {/* 1 */}
       <ServiceCard className="firstText">
         <h2>{servicesData[0].title}</h2>
         <p>{servicesData[0].summary}</p>
-        <UnderlineText text="LEARN MORE" color={"hsl(51, 100%, 49%)"} />
+        <UnderlineText color={"hsl(51, 100%, 49%)"} />
       </ServiceCard>
       {/* 2 */}
       <ServiceImage image={egg} className="eggPic" />
@@ -123,7 +162,7 @@ function Services() {
       <ServiceCard className="secondText">
         <h2>{servicesData[1].title}</h2>
         <p>{servicesData[1].summary}</p>
-        <UnderlineText text="LEARN MORE" color={"hsl(7, 99%, 70%)"} />
+        <UnderlineText color={"hsl(7, 99%, 70%)"} />
       </ServiceCard>
       {/* 4 */}
       <ServiceImage image={cup} className="cupPic" />

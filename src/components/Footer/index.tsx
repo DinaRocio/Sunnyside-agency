@@ -9,20 +9,24 @@ import {
   LogoList,
   SocialMediaLogo,
 } from "./styles";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "footer",
+  });
   return (
     <FooterContainer id="contact">
       <img src={logo} alt="logo" className="footer-logo" />
       <LinksList>
         <li>
-          <a href="https://github.com/DinaRocio">About</a>
+          <a href="https://github.com/DinaRocio">{t("about")}</a>
         </li>
         <li>
-          <a href="https://github.com/DinaRocio">Services</a>
+          <a href="https://github.com/DinaRocio">{t("services")}</a>
         </li>
         <li>
-          <a href="https://github.com/DinaRocio">Projects</a>
+          <a href="https://github.com/DinaRocio"> {t("projects")}</a>
         </li>
       </LinksList>
 

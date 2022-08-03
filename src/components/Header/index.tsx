@@ -10,7 +10,7 @@ export default function Header() {
       <Navbar />
       <HeroImage image={heroImage} />
       <HeroContent>
-        <H1>{t("header.title")}</H1>
+        <H1>{t("pages.header.title")}</H1>
         <img src={ArrowDown} alt="logo" />
       </HeroContent>
     </div>

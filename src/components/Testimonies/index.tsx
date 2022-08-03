@@ -4,6 +4,8 @@ import { clientTestimonials } from "../../data";
 import emily from "./../../assets/image-emily.jpg";
 import thomas from "./../../assets/image-thomas.jpg";
 import jennie from "./../../assets/image-jennie.jpg";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 interface ProfileImgProps {
   image: string;
@@ -72,9 +74,30 @@ const Names = styled.div`
 `;
 
 function Testimonies() {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "clientTestimonials",
+  });
+
+  const clientTestimonials = [
+    {
+      fullname: "Emily R.",
+      position: t("first.position"),
+      testimony: t("first.testimony"),
+    },
+    {
+      fullname: "Thomas S.",
+      position: t("second.position"),
+      testimony: t("second.testimony"),
+    },
+    {
+      fullname: "Jennie F.",
+      position: t("third.position"),
+      testimony: t("third.testimony"),
+    },
+  ];
   return (
     <TestimoniesSection id="projects">
-      <h2>CLIENT TESTIMONIALS</h2>
+      <h2>{t("title")}</h2>
       <TestimoniesBody>
         <ProfileCard>
           <ProfileImg image={emily} />

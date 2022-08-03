@@ -1,6 +1,5 @@
 import logo from "./../../assets/logo.svg";
 import hamburger from "./../../assets/icon-hamburger.svg";
-import { links } from "../../links";
 import {
   DesktopUl,
   Hamburger,
@@ -12,13 +11,41 @@ import {
   Triangle,
 } from "./styles";
 import { useState } from "react";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "footer",
+  });
   const [showModal, setShowModal] = useState(false);
 
   const onClickHamburger = () => {
     setShowModal(!showModal);
   };
+
+  const links = [
+    {
+      id: 1,
+      text: t("about"),
+      url: "#about",
+    },
+    {
+      id: 2,
+      text: t("services"),
+      url: "#services",
+    },
+    {
+      id: 3,
+      text: t("projects"),
+      url: "#projects",
+    },
+    {
+      id: 4,
+      text: t("about"),
+      url: "#contact",
+    },
+  ];
 
   return (
     <NAV>
