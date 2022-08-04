@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import es from "./es/es.json";
 import en from "./en/en.json";
 import pt from "./pt/pt.json";
+import de_CH from "./de_CH/de_CH.json";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 // const languageDetector = new LanguageDetector(options);
@@ -16,7 +17,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: "es",
+    fallbackLng: "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
@@ -29,6 +30,9 @@ i18n
       },
       pt: {
         translation: pt,
+      },
+      de_CH: {
+        translation: de_CH,
       },
     },
   });
