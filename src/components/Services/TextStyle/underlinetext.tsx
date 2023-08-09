@@ -35,7 +35,7 @@ export default function UnderlineText({ text, color }: Props) {
     keyPrefix: "utils",
   });
   return (
-    <Container>
+    <Container data-testid="readmore-btn">
       <p>{text ?? t("learn_more")}</p>
       <Underline color={color} />
     </Container>

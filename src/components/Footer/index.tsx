@@ -17,7 +17,13 @@ export default function Footer() {
   });
   return (
     <FooterContainer id="contact">
-      <img src={logo} alt="logo" className="footer-logo" />
+      <a
+        href="https://github.com/DinaRocio/Sunnyside-agency"
+        data-testid="sunnyside-logo-footer"
+      >
+        <img src={logo} alt="logo" className="footer-logo" />
+      </a>
+
       <LinksList>
         <li>
           <a href="https://github.com/DinaRocio">{t("about")}</a>
@@ -30,27 +36,24 @@ export default function Footer() {
         </li>
       </LinksList>
 
-      <LogoList>
-        <li>
+      <LogoList id="social-media-logo">
+        <li id="facebook">
           <SocialMediaLogo href="https://www.facebook.com/">
             <img src={facebook} alt="facebook" />
           </SocialMediaLogo>
         </li>
-        <li>
+        <li id="instagram">
           <SocialMediaLogo href="https://www.instagram.com">
-            {" "}
             <img src={instagram} alt="instagram" />{" "}
           </SocialMediaLogo>
         </li>
-        <li>
+        <li id="twitter">
           <SocialMediaLogo href="https://www.twitter.com">
-            {" "}
             <img src={twitter} alt="twitter" />{" "}
           </SocialMediaLogo>
         </li>
-        <li>
+        <li id="pinterest">
           <SocialMediaLogo href="https://www.pinterest.com">
-            {" "}
             <img src={pinterest} alt="pinterest" />{" "}
           </SocialMediaLogo>
         </li>

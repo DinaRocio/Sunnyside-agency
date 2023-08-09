@@ -96,13 +96,13 @@ function Testimonies() {
   return (
     <TestimoniesSection id="projects">
       <h2>{t("title")}</h2>
-      <TestimoniesBody>
+      <TestimoniesBody id="testimonies-body">
         <ProfileCard>
           <ProfileImg image={emily} />
           <p>{clientTestimonials[0].testimony}</p>
           <Names>
-            <h3> {clientTestimonials[0].fullname}</h3>
-            <h4> {clientTestimonials[0].position}</h4>
+            <h3 id="fullname"> {clientTestimonials[0].fullname}</h3>
+            <h4 id="position"> {clientTestimonials[0].position}</h4>
           </Names>
         </ProfileCard>
 
@@ -110,8 +110,8 @@ function Testimonies() {
           <ProfileImg image={thomas} />
           <p>{clientTestimonials[1].testimony}</p>
           <Names>
-            <h3> {clientTestimonials[1].fullname}</h3>
-            <h4> {clientTestimonials[1].position}</h4>
+            <h3 id="fullname"> {clientTestimonials[1].fullname}</h3>
+            <h4 id="position"> {clientTestimonials[1].position}</h4>
           </Names>
         </ProfileCard>
 
@@ -119,8 +119,8 @@ function Testimonies() {
           <ProfileImg image={jennie} />
           <p>{clientTestimonials[2].testimony}</p>
           <Names>
-            <h3> {clientTestimonials[2].fullname}</h3>
-            <h4> {clientTestimonials[2].position}</h4>
+            <h3 id="fullname"> {clientTestimonials[2].fullname}</h3>
+            <h4 id="position"> {clientTestimonials[2].position}</h4>
           </Names>
         </ProfileCard>
       </TestimoniesBody>

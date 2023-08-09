@@ -47,9 +47,14 @@ export const Navbar = () => {
   ];
 
   return (
-    <NAV>
-      <img src={logo} alt="logo" />
-      <DesktopUl>
+    <NAV id="navbar">
+      <a
+        href="https://github.com/DinaRocio/Sunnyside-agency"
+        data-testid="sunnyside-logo"
+      >
+        <img src={logo} alt="logo" />
+      </a>
+      <DesktopUl id="desktop-ul">
         {links.map((link) => (
           <li key={link.id}>
             <a href={link.url} key={link.id}>

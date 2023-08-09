@@ -29,7 +29,7 @@ const Picture = styled.div<PictureProps>`
 
 function PicturesCarrousel() {
   return (
-    <PicturesContainer>
+    <PicturesContainer id="pictures-carrousel">
       <Picture image={milkbottlesDK} className="reverse-image" />
       <Picture image={orangeDK} className="reverse-image" />
       <Picture image={coneDK} className="reverse-image" />
