@@ -69,7 +69,7 @@ export const Navbar = () => {
           <MobileNavbarContainer>
             <Triangle />
             <MobileNavbar>
-              <MobileUl id="#hamburguer-menu">
+              <MobileUl data-testid="#hamburguer-menu">
                 {links.map((link) => (
                   <li key={link.id}>
                     <a href={link.url} key={link.id}>
